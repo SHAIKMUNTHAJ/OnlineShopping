@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        
+        .container {
+            padding: 10px;
+            
+             
+        }
+        .carousel-inner .carousel-item {
+    transition: transform 0.5s ease;
+}
+
+.card-img-top {
+    height: 50%;
+    
+}
+
+        .container-fluid {
+            border: 2px solid;
+            width: 100%;
+            height: 50px;
+            position: relative;
+        }
+      
+.container3 {
+            border: 2px solid;
+            height: 50px;
+            width: 100%;
+            justify-content: center;
+
+        }
+
+        .bigimage {
+            height: 100%;
+        }
+
+        #demo {
+            width: 100%;
+            position: absolute;
+        }
+
+        .carousel-item img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+    
+
+        nav ol {
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+
+
+        }
+
+        nav ol li {
+            padding: 10px;
+            float: right;
+
+        }
+
+        nav ol li a {
+            color: black;
+        }
+
+        .card {
+            border-radius: 15px;
+            width: 100%;
+            height: 40%;
+        }
+       
+        
+ .slider{
+  width:100%;
+  overflow:hidden;
+  
+}
+
+.slider-track{
+  display:flex;
+  gap:40px;
+  width:max-content;
+  animation:scroll 20s linear infinite;
+}
+
+.slider-track img{
+  width:200px;
+  height:140px;
+  object-fit:cover;
+
+}
+
+@keyframes scroll{
+ 0%{
+    transform:translateX(0);
+  }
+ 100%{
+    transform:translateX(-50%);
+  }
+}
+.mydiv{
+    
+    background-image:url("https://i.pinimg.com/1200x/0c/0a/ba/0c0abad230b99cbd1c28c24f961cf42a.jpg");
+    width:100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-image{ 
+    
+    position: absolute;
+    top:7%;
+    right:25%;
+   
+    
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+     
+}
+@media screen and(max-width:787px) {
+  .hero-image{ 
+    position: absolute;
+    top:7%;
+    right:25%;
+    width:50px;
+    height: 50px;
+    
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+    
+
+     
+}
+    
+}
+   .image2{
+       position: absolute;
+    top:7%;
+    right:9%;
+   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+}
+.image3{
+    position: absolute;
+    top:50%;
+    right:9%;
+   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+}  
+.image4{
+ position: absolute;
+ top:50%;
+ right: 25%;
+ clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.hero-image2{
+  background-image: url("https://i.pinimg.com/1200x/dc/07/4a/dc074ab638c7761fca3a717468acddf3.jpg");
+  width:100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  
+
+}
+.my-card{
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid gold;
+}
+.my-card img{
+ height: 700px;
+width:70%;
+  object-fit:cover;
+
+ 
+}
+.my-footer{
+  background:white;
+  text-align:center;
+  font-weight:bold;
+  padding:10px;
+}
+text{
+    color: darkgrey;
+}
+.btn{
+    background-color:
+#DEF5D3;
+    border-radius: 20px;
+}
+btn1{
+    font-size: 100px;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+
+
+            <ol>
+                <li><a href="#">Cart</a> </li>
+                <li><a href="#">Profile</a> </li>
+                <li><a href="#">Investor Relations</a> </li>
+                <li><a href="#">Became a Supplier</a> </li>
+
+            </ol>
+
+        </nav>
+    </div>
+    <nav class="mynav">
+        <ol>
+            <li><a href="#">
+                    Musical Instruments
+                </a> </li>
+            <li><a href="#">Books</a> </li>
+            <li><a href="#">Mobiles</a> </li>
+            <li><a href="#">Sports & Fitne</a> </li>
+            <li><a href="#">Watches</a> </li>
+            <li><a href="#">
+                    Electronics
+                </a> </li>
+            <li><a href="#">Men</a> </li>
+            <li><a href="#">Kids & Toys</a> </li>
+            <li><a href="#">Beauty & Health</a> </li>
+            <li><a href="#">Jewellery & Accessories</a> </li>
+            <li><a href="#">Women Western</a> </li>
+            <li><a href="#">
+                    Kurti, Saree & Lehenga</a> </li>
+            <li><a href="#">Popular</a> </li>
+        </ol>
+    </nav>
+
+    <img src="https://i.pinimg.com/1200x/81/56/d2/8156d290f668ad70a3c1d8f2b771b90e.jpg" alt="image" width="100%">
+
+    <div class="container3">
+        <nav>
+            <ol>
+                <li><a href="#">7days easy to return</a></li>
+                <li><a href="#">Cash on Delivery</a></li>
+                <li><a href="#">Lowest Prices</a></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+             <div class="col-sm-2">
+                <div class=" card-body">
+                    <img src="https://i.pinimg.com/736x/99/24/d0/9924d0190d129630184adbcb15a45193.jpg" alt="images"
+                        width="100%" height="50%">
+                </div>
+                <div class=" card-footer">
+                    Kids Wear
+
+                </div>
+            </div>
+
+            
+
+            <div class="col-sm-2">
+                <div class=" card-body">
+                    <img src="https://i.pinimg.com/736x/18/4b/9b/184b9b0107900dae7def9ee3cf825e41.jpg" alt="images"
+                        width="100%" height="50%">
+                </div>
+                <div class=" card-footer">
+                    Women Wear
+
+                </div>
+            </div>
+
+
+            <div class="col-sm-2 text-dark">
+                <div class=" card-body">
+                    <img src="https://i.pinimg.com/736x/9b/fd/07/9bfd075952148b858ff9077030b7a257.jpg" alt="images"
+                        width="100%" height="50%">
+                </div>
+                <div class=" card-footer">
+                    Mens Wear
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+                <div class=" card-body">
+                    <img src="https://i.pinimg.com/736x/9d/15/ce/9d15ce47cb251c4c6d3a4c5137e40edf.jpg" alt="images"
+                        width="100%" height="50%">
+                </div>
+                <div class=" card-footer">
+                    cosmetics
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+                <div class=" card-body">
+                    <img src="https://i.pinimg.com/1200x/f8/f2/a2/f8f2a285a6e9f493eaf4aca605f3adb8.jpg" alt="images"
+                        width="100%" height="50%">
+                </div>
+                <div class=" card-footer">
+                    HandBags
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+                <div class=" card-body">
+                    <img src="https://i.pinimg.com/736x/ab/23/29/ab2329679c37a96ba76a35b737020afe.jpg" alt="images"
+                        width="100%" height="40%">
+                </div>
+                <div class=" card-footer">
+                    Phone
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="mydiv">
+        
+        
+       <div class="hero-image">
+     
+        <img src="https://i.pinimg.com/736x/ab/4f/1c/ab4f1c9d67a1917a484325e7abc91fe5.jpg" alt="image" width="200px";
+     height="200px">
+        </div>
+        <div class="image2">
+        <img src="https://i.pinimg.com/1200x/c8/fb/8d/c8fb8d6a85b7f7211b65bc840f0b0419.jpg" alt="image" width="200px" height="200px">
+       </div>
+       <div class="image3">
+        <img src="https://i.pinimg.com/736x/20/bb/62/20bb62dc5774f26d994fc08bc49cb91d.jpg" alt="image" width="200px" height="200px">       
+    </div>
+    <div class="image4">
+         <img src="https://i.pinimg.com/1200x/40/11/b5/4011b54feb6065899d27a90babce8107.jpg" alt="image" width="200px" height="200px">       
+    
+    </div>
+
+    </div>
+    
+   
+    <div class="container mt-5">
+
+    <div id="productCarousel" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+
+            
+            <div class="carousel-item active">
+                <div class="row text-center">
+
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="https://i.pinimg.com/1200x/5d/dd/38/5ddd38dbbb1e2172213fa534749da657.jpg" class="img-fluid card-img-top"
+                             width="50%" height="50%">
+                            <h6>Electronics</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="
+                            https://i.pinimg.com/1200x/bb/d6/ac/bbd6ac9f965afd637a1ae343f0b83871.jpg" class="img-fluid card-img-top">
+                            <h6>Makeup</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src=
+                            "https://i.pinimg.com/736x/4a/7d/ad/4a7dadfc822f473ae8bb2af9b4e64de4.jpg" class="img-fluid card-img-top">
+                            <h6>Smart Phones</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="
+                            https://i.pinimg.com/736x/0d/f8/9d/0df89d8505f410973609edcb5f6eddcf.jpg" class="img-fluid card-img-top">
+                            <h6>Laptops</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="
+                            https://i.pinimg.com/736x/b6/42/62/b6426246de25b98aec23d9002b100acb.jpg" class="img-fluid card-img-top">
+                            <h6>Headphones</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="
+                            https://i.pinimg.com/736x/16/e9/ca/16e9caf0450078a7a81208b8d2727dc3.jpg" class="img-fluid card-img-top">
+                            <h6>Watches</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+         <div class="carousel-item">
+                <div class="row text-center">
+
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="
+                            https://i.pinimg.com/1200x/c7/e9/69/c7e96981e86b93df6e33655d831e0d62.jpg" class="img-fluid card-img-top">
+                            <h6>TV</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="
+                            https://i.pinimg.com/736x/7e/9e/a7/7e9ea798e0494e1c85675812bb498cc7.jpg" class="img-fluid card-img-top">
+                            <h6>Camera</h6>
+                        </div>
+                    </div>
+
+                   
+                     <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="https://i.pinimg.com/736x/39/fe/d4/39fed4172c0831897021a489644ce826.jpg" class="img-fluid card-img-top">
+                            <h6>Printer</h6>
+                        </div>
+                    </div>
+                     <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="
+                            https://i.pinimg.com/1200x/c7/b1/64/c7b164a1c8c934a3069cdfd6181aa7cd.jpg" class="img-fluid card-img-top">
+                            <h6>Bed Sheets</h6>
+                        </div>
+                    </div>
+                     <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="
+                            https://i.pinimg.com/1200x/a6/d7/c4/a6d7c4ec25903e6dd6c276e741bd1bed.jpg" class="img-fluid card-img-top">
+                            <h6>Dry Fruties</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card p-2">
+                            <img src="https://i.pinimg.com/736x/fe/65/38/fe6538de2180ebdf67ad632173f83e1a.jpg" class="img-fluid card-img-top">
+                            <h6>
+                                Face Masks
+                            </h6>
+                        </div>
+                    </div>
+                
+                    
+                  
+                    
+                 
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Controls OUTSIDE carousel-inner -->
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+        </a>
+
+    </div>
+
+</div>
+ 
+
+
+<div class="slider">
+  <div class="slider-track">
+
+    <img src="https://i.pinimg.com/1200x/14/1d/88/141d88e5cbb73e02390bd26301193482.jpg">
+    <img src="https://i.pinimg.com/1200x/57/32/e2/5732e2b22d19360c8ede92c1fbd9d8b5.jpg">
+    <img src="https://i.pinimg.com/736x/24/97/11/2497118696345f825d013a63e695a52e.jpg">
+    <img src="https://i.pinimg.com/1200x/ee/4d/04/ee4d04056874884d59fdad0baa75cf67.jpg">
+    <img src="https://i.pinimg.com/736x/60/69/64/606964bbefaf2940cb071ac1e9ecc612.jpg">
+    <img src="https://i.pinimg.com/1200x/2f/5a/8c/2f5a8c55d6f34094fe44b7d9125ee074.jpg">
+    <img src="https://i.pinimg.com/1200x/0d/ee/ee/0deeee4572d824b9307d9878d51a16f5.jpg">
+    <img src="https://i.pinimg.com/736x/04/fc/ca/04fccae79e85651ac9ef34e02d9cc574.jpg">
+
+    <!-- DUPLICATE AGAIN -->
+    <img src="https://i.pinimg.com/1200x/14/1d/88/141d88e5cbb73e02390bd26301193482.jpg">
+    <img src="https://i.pinimg.com/1200x/57/32/e2/5732e2b22d19360c8ede92c1fbd9d8b5.jpg">
+    <img src="https://i.pinimg.com/736x/24/97/11/2497118696345f825d013a63e695a52e.jpg">
+    <img src="https://i.pinimg.com/1200x/ee/4d/04/ee4d04056874884d59fdad0baa75cf67.jpg">
+    <img src="https://i.pinimg.com/736x/60/69/64/606964bbefaf2940cb071ac1e9ecc612.jpg">
+    <img src="https://i.pinimg.com/1200x/2f/5a/8c/2f5a8c55d6f34094fe44b7d9125ee074.jpg">
+    <img src="https://i.pinimg.com/1200x/0d/ee/ee/0deeee4572d824b9307d9878d51a16f5.jpg">
+    <img src="https://i.pinimg.com/736x/04/fc/ca/04fccae79e85651ac9ef34e02d9cc574.jpg">
+
+  </div>
+
+  <div class="hero-image2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card my card shadow-lg">
+                    <img src="https://i.pinimg.com/736x/cf/c6/e9/cfc6e9aa7733d9c429883f2d0c8c63d5.jpg" height="700px;">
+                    <div class="my-footer">Kidswear</div>
+                </div>
+            </div>    
+     <div class="col-md-3">
+                <div class="card my card shadow-lg">
+                    <img src="https://i.pinimg.com/736x/37/ce/0a/37ce0aa64a6e6cb4ea66ae0b92bab775.jpg">
+                    <div class="my-footer">Kidswear</div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card my card shadow-lg">
+                    <img src="https://i.pinimg.com/1200x/20/ae/fb/20aefb93e0fa3abf7888e6296c52c607.jpg">
+                    <div class="my-footer">Kidswear</div>
+                </div>
+            </div>
+              
+
+              <div class="col-md-3">
+                <div class="card my card shadow-lg">
+                    <img src="https://i.pinimg.com/1200x/e1/b7/27/e1b72786f328de20ee8a403ab8f99462.jpg">
+                    <div class="my-footer">Kidswear</div>
+                </div>
+            </div>   
+           
+            
+          
+            
+
+
+
+        </div>
+   
+            
+            
+        </div>
+</div>
+  <div class="container-fluid " style="height: 100%" class="size">
+    <div class="row">
+    <div class="col-sm-2">
+    <h4> Products For You</h4>
+    <button>sale by:relevance</button>
+   <p> <button>Category</button></p>
+    </div>
+    <div class="col-md-10">
+    <div class="row">
+         <div class="col-md-3">
+            <div class="card" style="min-height: 400px;">
+                <div class="card-body">
+     <img src="https://i.pinimg.com/474x/72/37/d0/7237d0f373472acf9955504c940d369a.jpg" width="250px">
+</div>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="height: 400px;">
+                <div class="card-body">
+<img src="https://i.pinimg.com/736x/7e/93/08/7e93083fcedff7efc38583aa80d530c8.jpg" width="250px">
+<div>
+    <span>
+        <p class="text"> Stylist Comb</p>
+        <h3>91</h3>
+        <button class="btn">Free delivery</button>
+        <button class="btn1"> <ion-icon name="star-outline"></ion-icon></button>
+    </span>
+</div>
+        </div>
+        </div>
+        </div>
+
+         <div class="col-md-3">
+            <div class="card" style="height: 400px" >
+                <div class="card-body">
+<img src="https://i.pinimg.com/736x/9a/fc/d3/9afcd364352c5b03cbf17c62120f2656.jpg" width="240px">
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <div class="card" style="height: 400px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/c9/29/07/c9290798cd2582e1296bee1ef2118c31.jpg" width="250px" height="270px">
+        </div>
+        </div>
+        </div>
+             
+                <div class="col-md-3">
+        <div class="card" style="height: 400px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/27/88/c1/2788c11deb98211adefa6044caa0fd99.jpg" width="250px" height="270px">
+        </div>
+        </div>
+        </div>
+
+                <div class="col-md-3">
+        <div class="card" style="height: 400px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/8e/27/b8/8e27b8068feb67e5d6464b4898223b5a.jpg" width="250px" height="270px">
+<p>Perfume</p>
+        </div>
+        </div>
+        </div>
+
+                <div class="col-md-3">
+        <div class="card" style="height: 400px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/81/35/88/813588b2ddd67eff424a7d197506ad78.jpg" width="250px" height="270px">
+<p>MAKEUPKIT</p>
+        </div>
+        </div>
+        </div>
+
+                <div class="col-md-3">
+        <div class="card" style="height: 400px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/6b/b6/27/6bb627a1e2fc092e48862c7924aa2e18.jpg" width="250px" height="270px">
+<p>FACE CREAMs</p>
+        </div>
+        </div>
+        </div>
+
+        
+                <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/af/d1/44/afd144d9d9ac27ab4f28d097e7a0236f.jpg" width="250px" height="350px">
+<p>HALF SAREES</p>
+        </div>
+        </div>
+        </div>
+
+
+     <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/1e/32/98/1e32983c054a818a3867acb0690df8a2.jpg" width="250px" height="350px">
+<p> SAREES</p>
+        </div>
+        </div>
+        </div>
+        
+         <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/b6/52/0a/b6520a61be36f5b12222beb5225e7d73.jpg" width="250px" height="350px">
+<p>LONG FROCKS</p>
+        </div>
+        </div>
+        </div>
+        
+         <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/97/e2/48/97e2480d4650353b0d0cef6ed2392e2c.jpg" width="250px" height="350px">
+<p>HALF SAREES</p>
+        </div>
+        </div>
+        </div>
+        
+         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/74/fa/ac/74faacdb9a83daf82358a6a4440729df.jpg" width="250px" height="300px">
+<p>HALF SAREES</p>
+        </div>
+        </div>
+        </div>
+
+
+                 <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/5f/7c/26/5f7c26c12c8577df24b8d578507d87c8.jpg" width="250px" height="300px">
+<p>NIGHT WEAR DRESSES</p>
+        </div>
+        </div>
+        </div>
+
+                 <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/eb/70/d8/eb70d84f81269bcea8ce6b29d5831470.jpg" width="250px" height="300px">
+<p>WOMEN JEANS</p>
+        </div>
+        </div>
+        </div>
+
+
+                 <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/c9/9e/25/c99e254beae1a08647bb1865b963f0e8.jpg" width="250px" height="300px">
+<p>KURTHA SETS</p>
+        </div>
+        </div>
+        </div>
+        
+                         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/d4/d6/fc/d4d6fc306983b42b23531443344d0fd0.jpg" width="250px" height="300px">
+<p>SHIRTS</p>
+        </div>
+        </div>
+        </div>
+
+                         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/af/6c/3a/af6c3a308e3e682a63349d7547a50dd0.jpg" width="250px" height="300px">
+<p> CARGO JEANS</p>
+        </div>
+        </div>
+        </div>
+
+                         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/6a/ad/d5/6aadd5ab1fd58701de72da949988c586.jpg" width="250px" height="300px">
+<p>T-SHIRTS</p>
+        </div>
+        </div>
+        </div>
+
+                         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/0d/3d/6c/0d3d6c64c9d70bf564a6c3bff9f01de9.jpg" width="250px" height="300px">
+<p>CASUAL</p>
+        </div>
+        </div>
+        </div>
+          
+        
+                         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/9a/c8/35/9ac835a6ff86a4cc27e83955de164911.jpg" width="250px" height="300px">
+<p>Jewellery</p>
+        </div>
+        </div>
+        </div>
+
+        
+                         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/18/5d/81/185d81fcf47ba64a5d92f6a470c74c3e.jpg" width="250px" height="300px">
+<p>SUNGLASSES</p>
+        </div>
+        </div>
+        </div>
+
+        
+                         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/e0/20/45/e02045eda023e6c7fd46ca771af0d03f.jpg" width="250px" height="300px">
+<p>MEN WATCHES</p>
+        </div>
+        </div>
+        </div>
+
+        
+                         <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/0c/d2/60/0cd26049fd1e4482c4433161efa6e5ba.jpg" width="250px" height="300px">
+<p>SHOES</p>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/d2/d4/d8/d2d4d838bdd4db2456576fdf18ee6154.jpg" width="250px" height="300px">
+<p>SHIRSTS</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/26/28/82/2628827acfb2479baad79e7c39ddd927.jpg" width="250px" height="300px">
+<p>SUITS</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/2a/8f/c5/2a8fc51118f513a8472a6198209dead6.jpg" width="250px" height="300px">
+<p>TRADITIONAL</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="card" style="height: 450px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/1200x/a2/c6/98/a2c6988f13b5dfa5685ad75540b97753.jpg" width="250px" height="300px">
+<p>PANCHAS</p>
+        </div>
+        </div>
+        </div>
+
+
+         <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/55/51/75/555175ecd0df0d859a8e91d94637d416.jpg" width="250px" height="350px">
+<p>JAMMY FROCK</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/d6/35/67/d6356773d570097609329ad15e464dd8.jpg" width="250px" height="350px">
+<p>MODERN CUT</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/ca/38/40/ca3840812a2f42529f1dd0c76ee7f989.jpg" width="250px" height="350px">
+<p>TRADITIONAL</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/de/02/97/de0297c63696ef93fc0e8eb8de439004.jpg" width="250px" height="350px">
+<p>PANCHAS</p>
+        </div>
+        </div>
+        </div>
+
+
+         <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/4e/d7/86/4ed786ec31766a40766c0c88030b0a42.jpg" width="250px" height="350px">
+<p>NIGHT LIGHT LAMPS</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/fd/41/d9/fd41d9c42624cc375e5ee7c98233f8e3.jpg" width="250px" height="350px">
+<p>DECORS</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/21/1e/6a/211e6a532900fdb4afbb79f94bae96be.jpg" width="250px" height="300px">
+<p>TRADITIONAL</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="card" style="height: 500px" >
+            <div class="card-body">
+<img src="https://i.pinimg.com/736x/c3/53/72/c35372aac23c71f78280a9b318ebae57.jpg" width="250px" height="300px">
+<p>PANCHAS</p>
+        </div>
+        </div>
+        </div>
+        
+        
+
+        </div>
+    </div>
+  </div>     
+    
+    
+    
+  </div>
+  
+  
+ 
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+                        
+ <script src="bower_components/aos/dist/aos.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
+</html>
